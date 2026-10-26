@@ -2,18 +2,18 @@ function beautifyFigure(hFig, opts)
     % BEAUTIFYFIGURE 美化 MATLAB 图形以适用于论文出版。
     %
     % 用法：
-    %   beautifyFigure()                                    % 自动美化当前图形。
-    %   beautifyFigure(fig)                                 % 美化指定句柄的图形（位置参数）。
-    %   beautifyFigure(hFig=fig)                           % 美化指定句柄的图形（命名参数）。
-    %   beautifyFigure(fig, filename="foo")                % 美化并保存图形。
-    %   beautifyFigure(fig, figSize=[7, 5])                % 指定尺寸。[宽, 高]
-    %   beautifyFigure(fig, figSize=[0, 0])                % 不修改尺寸。
-    %   beautifyFigure(sizeObject="figure", figSize=[10, 8]) % 设置整个图形尺寸。
-    %   beautifyFigure(sizeObject="axes", figSize=[7, 5])    % 设置坐标轴尺寸。
-    %   beautifyFigure(filename="foo", exportFormats=["pdf"]) % 只导出PDF格式。
-    %   beautifyFigure(fontSize=8)                         % 统一设置字体大小为 8 pt。
-    %   beautifyFigure(lineWidth=1.5)                      % 统一设置线宽为 1.5 pt。
-    %   beautifyFigure(truncateY=[10,20], truncateYTickSpacing=[2,5]) % 截断Y轴，下轴间隔2，上轴间隔5
+    % beautifyFigure();                                                     % 自动美化当前图形。
+    % beautifyFigure(fig);                                                  % 美化指定句柄的图形（位置参数）。
+    % beautifyFigure(hFig = fig);                                           % 美化指定句柄的图形（命名参数）。
+    % beautifyFigure(fig, filename = "foo");                                % 美化并保存图形。
+    % beautifyFigure(fig, figSize = [7, 5]);                                % 指定尺寸。[宽, 高]
+    % beautifyFigure(fig, figSize = [0, 0]);                                % 不修改尺寸。
+    % beautifyFigure(sizeObject = "figure", figSize = [10, 8]);             % 设置整个图形尺寸。
+    % beautifyFigure(sizeObject = "axes", figSize = [7, 5]);                % 设置坐标轴尺寸。
+    % beautifyFigure(filename = "foo", exportFormats = ["pdf"]);            % 只导出PDF格式。
+    % beautifyFigure(fontSize = 8);                                         % 统一设置字体大小为 8 pt。
+    % beautifyFigure(lineWidth = 1.5);                                      % 统一设置线宽为 1.5 pt。
+    % beautifyFigure(truncateY = [10, 20], truncateYTickSpacing = [2, 5]);  % 截断Y轴，下轴间隔2，上轴间隔5
     %
     % 参数：
     %   "hFig" - 图形句柄，默认使用当前图形。如果同时提供位置参数和命名参数 hFig，则优先使用位置参数。

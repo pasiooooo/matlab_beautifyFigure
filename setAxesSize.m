@@ -1,5 +1,5 @@
 function [fig, ax] = setAxesSize(targetSize, fig, ax)
-    %SETAXESSIZE 调整图形窗口大小以精确匹配坐标区的目标尺寸。
+    % SETAXESSIZE 调整图形窗口大小以精确匹配坐标区的目标尺寸。
     %
     % 语法:
     %   setAxesSize(targetSize)

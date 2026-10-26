@@ -250,6 +250,13 @@ function beautifyFigure(hFig, opts)
         set(colorbarHandles(i), 'FontSize', opts.fontSize, 'FontWeight', 'normal', 'FontName', 'Arial', 'LineWidth', opts.lineWidth);
     end
 
+    % 如果目录不存在，则创建目录
+    outDir = fileparts(opts.filename);
+
+    if strlength(outDir) > 0 && ~isfolder(outDir)
+        mkdir(outDir);
+    end
+
     % 如果提供了文件名，则根据指定格式保存图形
     if opts.filename ~= ""
         % 保存为 FIG 文件
